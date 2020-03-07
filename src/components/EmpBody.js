@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "../styles/EmpBody.css";
 import DataAreaContext from "../utils/DataAreaContext";
 
-const DataBody = () => {
+const EmpBody = () => {
   const context = useContext(DataAreaContext);
 
   function formatDate(date) {
@@ -18,7 +18,7 @@ const DataBody = () => {
   return (
     <tbody>
       {context.developerState.filteredUsers[0] !== undefined && context.developerState.filteredUsers[0].name !== undefined ? (
-        context.developerState.filteredUsers.map(({ login, name, picture, phone, email, dob }) => {
+        context.developerState.filteredUsers.map(({ login, name, picture, cell, phone, email, dob }) => {
           return (
             <tr key={login.uuid}>
               <td data-th="Image" className="align-middle">
@@ -31,16 +31,20 @@ const DataBody = () => {
               <td data-th="Name" className="name-cell align-middle">
                 {name.first} {name.last}
               </td>
+              <td data-th="Cell" className="align-middle">
+                {cell}
+              </td>
               <td data-th="Phone" className="align-middle">
                 {phone}
               </td>
+
               <td data-th="Email" className="align-middle">
                 <a href={"mailto:" + email} target="__blank">
                   {email}
                 </a>
               </td>
               <td data-th="DOB" className="align-middle">
-                {formatDate(dob.date)}
+                {formatDate(dob.date)}                
               </td>
             </tr>
           );
@@ -52,4 +56,4 @@ const DataBody = () => {
   );
 }
 
-export default DataBody;
+export default EmpBody;
