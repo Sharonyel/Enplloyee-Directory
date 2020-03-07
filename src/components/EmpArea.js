@@ -12,11 +12,11 @@ const EmpArea = () => {
     filteredUsers: [],
     headings: [
       { name: "Image"},
-      { name: "Name"},
-      { name: "Cell"},
-      { name: "Phone"},
-      { name: "Email"},
-      { name: "Birthday"}
+      { name: "name" },
+      { name: "cell"},
+      { name: "phone"},
+      { name: "email"},
+      { name: "dob"}
     ]
   });
 
@@ -34,6 +34,7 @@ const EmpArea = () => {
 
     const compareFnc = (a, b) => {
       if (currentOrder === "ascend") {
+        console.log(heading)
         if (a[heading] === undefined) {
           return 1;
         } else if (b[heading] === undefined) {

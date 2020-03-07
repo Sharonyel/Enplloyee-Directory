@@ -26,6 +26,7 @@ const EmpTable = () => {
                   onClick={() => {
                     // context.handleSort(name.toLowerCase());
                     context.handleSort(name);
+                    console.log(name)
                   }}
                 >
                   {name}
