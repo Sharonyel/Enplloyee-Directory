@@ -10,11 +10,11 @@ const SearchName = () => {
       <div className="input-group">
           <div className="input-group-prepend">
             <span className="input-group-text" id="">
-              Search
+              Search Employee Name
             </span>
           </div>
           <input
-          className="form-control mr-sm-2"
+          className="formsrch"
           type="search"
           placeholder="name"
           aria-label="Search"
