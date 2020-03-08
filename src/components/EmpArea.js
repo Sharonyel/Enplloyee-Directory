@@ -19,7 +19,6 @@ const EmpArea = () => {
       { name: "dob"}
     ]
   });
-  const newHeading = 
 
   const handleSort = heading => {
     let currentOrder = developerState.headings
