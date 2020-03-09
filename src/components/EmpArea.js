@@ -81,7 +81,7 @@ const EmpArea = () => {
     const filter = event.target.value;
     const filteredList = developerState.users.filter(item => {
       let values = item.name.first.toLowerCase() + " " + item.name.last.toLowerCase();
-      console.log(filter, values)
+      // console.log(filter, values)
     if(values.indexOf(filter.toLowerCase()) !== -1){
       return item
     };
@@ -92,7 +92,7 @@ const EmpArea = () => {
 
   useEffect(() => {
     API.getUsers().then(results => {
-      console.log(results.data.results);
+      // console.log(results.data.results);
       setDeveloperState({
         ...developerState,
         users: results.data.results,

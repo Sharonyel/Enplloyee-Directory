@@ -4,9 +4,7 @@ import EmpArea from "./EmpArea";
 
 function Main () {
     return (
-      <>
         <EmpArea />
-      </>
     );
   };
 

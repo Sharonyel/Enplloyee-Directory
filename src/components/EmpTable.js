@@ -1,4 +1,3 @@
-// import React from "react";
 import React, { useContext } from "react";
 
 import EmpBody from "./EmpBody";
@@ -24,7 +23,6 @@ const EmpTable = () => {
                   key={name}
                   style={{ width }}
                   onClick={() => {
-                    // context.handleSort(name.toLowerCase());
                     context.handleSort(name);
                     console.log(name)
                   }}
