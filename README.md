@@ -3,7 +3,7 @@ Employee Directory
 
 This app displays an employee directory with React. The application UI's are broken up into components and are the state is managed by user response and input.
 
-<img src="src/styles/screenshot.jpg" width=700>
+<img src="src/styles/screenshot1.jpg" width=700>
 
 ## Available Scripts
 
